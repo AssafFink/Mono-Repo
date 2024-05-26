@@ -1,0 +1,8 @@
+services:
+  locker-picker-service:
+    image: assaffink/monorepo-image:1.0
+    build: .
+    container_name: mopnorepo-container
+    ports:
+      - 80:4000
+    restart: unless-stopped
